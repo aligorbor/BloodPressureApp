@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "769232223651",
+    "project_id": "onyx-cosmos-314917",
+    "storage_bucket": "onyx-cosmos-314917.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769232223651:android:9489fdf2f205fedae32e16",
+        "android_client_info": {
+          "package_name": "ru.geekbrains.android2.bloodpressureapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769232223651-76pjcjoq5iamdhc2ue8sc7koqg4dptsd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.geekbrains.android2.bloodpressureapp",
+            "certificate_hash": "4d0a467725fe0f081acc60356821338300c1c106"
+          }
+        },
+        {
+          "client_id": "769232223651-pjdjjfpe1kghmcua8i41d5d4usmkfi35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK1TN4Pcz7tRZFvVVokjTMgnP54XUz4xA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769232223651-pjdjjfpe1kghmcua8i41d5d4usmkfi35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

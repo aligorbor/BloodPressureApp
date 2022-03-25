@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_back4"
+        app:actionViewClass="android.widget.CheckBox"
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@android:drawable/ic_menu_view"
+        android:orderInCategory="40"
+        android:title="@string/action_back4app"
+        app:showAsAction="never" />
+</menu>
