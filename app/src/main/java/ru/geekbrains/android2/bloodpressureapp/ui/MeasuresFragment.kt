@@ -2,9 +2,7 @@ package ru.geekbrains.android2.bloodpressureapp.ui
 
 import android.app.ProgressDialog
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.app.AlertDialog
@@ -31,6 +29,12 @@ class MeasuresFragment : Fragment() {
     private var saveMeasureButton: ImageView? = null
     private var cancelMeasureButton: ImageView? = null
     private var deleteMeasureButton: ImageView? = null
+    private var useBack4App: Boolean = false
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -179,6 +183,26 @@ class MeasuresFragment : Fragment() {
                 .addToBackStack("")
                 .commitAllowingStateLoss()
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.measures_fragment, menu)
+        val adultItem = menu.findItem(R.id.action_back4)
+        adultItem.isChecked = useBack4App
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_back4 -> {
+                item.isChecked = !item.isChecked
+                useBack4App = item.isChecked
+                viewModel.toUseBack4App(useBack4App)
+                viewModel.getListOfMeasures()
+                return true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+
     }
 
     override fun onDestroy() {

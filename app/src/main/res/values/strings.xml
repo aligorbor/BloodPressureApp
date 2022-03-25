@@ -18,4 +18,5 @@
     <string name="save_err_msg">Please enter values of the SYS, DIA and PULSE</string>
     <string name="save_err">Error</string>
     <string name="ok">OK</string>
+    <string name="action_back4app">Back4App</string>
 </resources>
