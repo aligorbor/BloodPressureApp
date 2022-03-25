@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">BloodPressureApp</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <string name="back4app_app_id">DyvQhXIpji0ISZvi6S1lkEukNBWfC0ToMDMSqcWt</string>
+    <string name="back4app_client_key">2n6DEc2KR8dZv6sFEPkK5r6NpTyOeDh8yoS42T8m</string>
+
+    <string name="list_is_empty">List is empty</string>
+    <string name="save_measure">Save Measure</string>
+    <string name="cancel">Cancel</string>
+    <string name="blood_pressure">Blood pressure</string>
+    <string name="blood_pressure_sys">Blood pressure SYS</string>
+    <string name="blood_pressure_dia">Blood pressure DIA</string>
+    <string name="pulse">Pulse</string>
+    <string name="reload">Reload list of measures?</string>
+    <string name="slash">/</string>
+    <string name="create_measure">Create a Measure</string>
+    <string name="update_measure">Update a Measure</string>
+    <string name="save_err_msg">Please enter values of the SYS, DIA and PULSE</string>
+    <string name="save_err">Error</string>
+    <string name="ok">OK</string>
 </resources>
